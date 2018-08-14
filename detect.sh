@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 detect_os() {
+  # Based on https://stackoverflow.com/a/18434831
   echo -n "Detecting OS type... "
   case "$OSTYPE" in
     solaris*) echo "SOLARIS - Unsupported!"; return 1 ;;
